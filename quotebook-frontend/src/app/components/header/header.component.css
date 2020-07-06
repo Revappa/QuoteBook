@@ -1,0 +1,15 @@
+.navbar-brand{
+    color: white;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+    font-size: large;
+}
+
+.nav.navbar-nav li a:hover {
+    color: black;
+  }

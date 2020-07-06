@@ -1,0 +1,25 @@
+<nav class="navbar navbar-fixed-top" style="background-color: #00cca3; padding-top: 2px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">Quote Book</a>
+    </div>
+    <ul class="nav navbar-nav" routerLinkActive="active">
+      <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="addquote">Add Quote</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="quotes">Quote List</a></li>
+      <li class="nav-item"><a routerLink="users" class="nav-link" routerLinkActive="active">User List</a></li>
+      <li *ngIf="authority === 'user'" class="nav-item">
+        <a class="nav-link" routerLink="user">User Board</a>
+      </li>
+      <li *ngIf="authority === 'admin'" class="nav-item">
+        <a class="nav-link" routerLink="admin">Admin Board</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li *ngIf="!authority" class="nav-item"><a class="nav-link" routerLink="profile">Profile</a></li>
+      <li><a class="nav-link" routerLink="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li *ngIf="!authority" class="nav-item"><a class="nav-link" routerLink="auth/login"><span
+            class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>

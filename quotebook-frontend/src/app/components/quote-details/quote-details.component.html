@@ -1,0 +1,26 @@
+<br><br><br><br>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4>Quote Details</h4>
+    </div>
+    <div class="panel-body">
+      <div *ngIf="quote">
+        <div>
+          <label><b>Quote Name: </b></label> {{quote.quoteName}}
+        </div>
+        <div>
+          <label><b>Author: </b></label> {{quote.author}}
+        </div>
+        <div>
+          <label><b>Category: </b></label> {{quote.category}}
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <button (click)="list()" class="btn btn-primary">Back to Quote List</button><br>
+
+    </div>

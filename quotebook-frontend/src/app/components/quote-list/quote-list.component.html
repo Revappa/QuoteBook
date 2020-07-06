@@ -1,0 +1,35 @@
+<br><br><br><br>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4>Quote List</h4>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Quote Name</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let quote of quotes | async">
+            <td>{{quote.quoteName}}</td>
+            <td>{{quote.author}}</td>
+            <td>{{quote.category}}</td>
+            <td><button (click)="deleteQuote(quote.id)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>Delete</button>
+                <button (click)="updateQuote(quote.id)" class="btn btn-primary btn-sm" style="margin-left: 10px"><span class="glyphicon glyphicon-edit"></span>Edit</button>
+                <button (click)="quoteDetails(quote.id)" class="btn btn-success btn-sm" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>  
+  

@@ -1,0 +1,6 @@
+2020-06-30 11:27:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6 [42102-199]
+2020-06-30 11:27:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f [42102-199]

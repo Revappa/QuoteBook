@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.jwtAuth.dao.UserRepository"/>
+<fullyQualifiedTypeName name="com.thbs.model.RoleName"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.thbs.dao.UserRepository"/>
+<fullyQualifiedTypeName name="com.thbs.dao.RoleRepository"/>
+<fullyQualifiedTypeName name="com.thbs.security.JwtProvider"/>
+<fullyQualifiedTypeName name="com.thbs.model.Role"/>
+<fullyQualifiedTypeName name="com.thbs.model.User"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+</qualifiedTypeNameHistroy>

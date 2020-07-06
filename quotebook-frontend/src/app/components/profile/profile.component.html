@@ -1,0 +1,25 @@
+<br><br><br><br>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<div class="container" >
+  <div class="panel panel-primary">
+    <div class="panel-heading" style="padding-left: 120px; font-size: large;">
+      <h4>Your Information</h4>
+    </div>
+    <div class="panel-body" style="padding-left: 120px; font-size: large;">
+      <div *ngIf="info.token; else loggedOut">
+        <div>
+          <label><b>User Name: </b></label> {{info.username}}
+        </div>
+        <div>
+          <label><b>Role: </b></label> {{info.authorities}}
+        </div>
+      </div><br>
+      <button (click)="logout()" class="btn btn-primary">Logout</button><br>
+    </div>
+  </div>
+</div>
+
+<ng-template #loggedOut>
+  Please login.
+</ng-template>

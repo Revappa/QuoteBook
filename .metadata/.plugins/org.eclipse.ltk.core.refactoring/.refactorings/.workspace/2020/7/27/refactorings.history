@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Spring-boot-angular-jwt-login-backend-master&apos;" deleteContents="false" description="Delete resource &apos;Spring-boot-angular-jwt-login-backend-master&apos;" element1="/Spring-boot-angular-jwt-login-backend-master" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1593571726347"/>
+</session>
